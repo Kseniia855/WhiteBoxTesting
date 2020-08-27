@@ -1,0 +1,13 @@
+function accum(s) {
+let arr = s.split('');
+let finalArr = [];
+let str; 
+  for(let i=0; i<arr.length; i++){
+    str = arr[i].toUpperCase();
+      for(let j=1; j<=i; j++){
+        str = str + arr[i].toLowerCase();
+      }
+    finalArr.push(str);
+  }
+  return finalArr.join('-');
+}
